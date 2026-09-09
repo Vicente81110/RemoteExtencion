@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Control Remoto - Director</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="header">
+    <h1>🎯 Director</h1>
+    <div class="estado-box">
+      <span id="puntoEstado" class="punto desconectado"></span>
+      <span id="textoEstado">Verificando...</span>
+    </div>
+  </div>
+
+  <label>PCs conectadas</label>
+  <div id="listaPCs" class="lista-pcs">
+    <p class="vacio">Buscando equipos en la red...</p>
+  </div>
+  <button id="btnRefrescar" class="secundario">↻ Refrescar lista</button>
+
+  <label for="urlInput">URL a abrir</label>
+  <input type="text" id="urlInput" placeholder="ej: youtube.com" />
+
+  <button id="btnEnviar">Enviar a la PC seleccionada</button>
+
+  <p id="mensajeEstado" class="hint"></p>
+
+  <script src="popup.js"></script>
+</body>
+</html>
