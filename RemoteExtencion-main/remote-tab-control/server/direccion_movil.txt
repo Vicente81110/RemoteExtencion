@@ -1,0 +1,2 @@
+Panel del móvil: http://192.168.2.185:8081
+WebSocket (extensiones): ws://192.168.2.185:8080
